@@ -1,0 +1,63 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="24" fill="#fff9f5"/>
+  <!-- subtle inner border -->
+  <rect x="1" y="1" width="126" height="126" rx="23" stroke="#fde8d8" stroke-width="1" fill="none"/>
+  <defs>
+    <linearGradient id="lineGrad128" x1="14" y1="64" x2="68" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="starGrad128" x1="66" y1="30" x2="116" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="45%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="dimLine128" x1="14" y1="0" x2="68" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f4c4a0"/>
+      <stop offset="100%" stop-color="#fde8d8"/>
+    </linearGradient>
+    <filter id="glow128">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow128sm">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="halo128">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- LINE 1 -->
+  <rect x="14" y="24" width="52" height="12" rx="6" fill="url(#dimLine128)"/>
+  <!-- LINE 2 -->
+  <rect x="14" y="44" width="40" height="12" rx="6" fill="url(#dimLine128)"/>
+  <!-- LINE 3 — ACTIVE -->
+  <rect x="14" y="64" width="52" height="12" rx="6" fill="url(#lineGrad128)" filter="url(#glow128sm)"/>
+  <!-- LINE 4 -->
+  <rect x="14" y="84" width="34" height="12" rx="6" fill="url(#dimLine128)"/>
+  <!-- LINE 5 -->
+  <rect x="14" y="104" width="44" height="12" rx="6" fill="url(#dimLine128)"/>
+
+  <!-- large ambient halo -->
+  <circle cx="96" cy="68" r="34" fill="#fff0e0" filter="url(#halo128)" opacity="0.85"/>
+
+  <!-- outer star glow -->
+  <path d="M96 34 L101.5 57 L126 60 L101.5 63 L96 86 L90.5 63 L66 60 L90.5 57 Z"
+        fill="url(#starGrad128)" filter="url(#glow128)" opacity="0.55"/>
+
+  <!-- mid star -->
+  <path d="M96 40 L100.5 57.5 L119 60 L100.5 62.5 L96 80 L91.5 62.5 L73 60 L91.5 57.5 Z"
+        fill="url(#starGrad128)" filter="url(#glow128sm)" opacity="0.7"/>
+
+  <!-- crisp inner star -->
+  <path d="M96 46 L99.8 59 L113 60 L99.8 61 L96 74 L92.2 61 L79 60 L92.2 59 Z"
+        fill="url(#starGrad128)"/>
+
+  <!-- center dot -->
+  <circle cx="96" cy="60" r="7" fill="white"/>
+  <circle cx="96" cy="60" r="3.2" fill="#f97316"/>
+  <circle cx="96" cy="60" r="1.2" fill="white"/>
+</svg>
