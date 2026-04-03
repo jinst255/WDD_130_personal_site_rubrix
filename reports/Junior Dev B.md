@@ -17,4 +17,4 @@ Because I'm familiar with GitHub, I didn't have any problems with adding changes
 
 ### Include links to the site.
 
-There currently isn't one.
+https://jinst255.github.io/WDD_130_personal_site_rubrix/terms-of-service.html
