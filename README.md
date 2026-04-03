@@ -2,6 +2,8 @@
 
 A landing page for **Rubrix** — an AI-powered Chrome extension that grades Canvas assignments against their rubric before you submit.
 
+**🌐 GitHub Pages:** https://jinst255.github.io/WDD_130_personal_site_rubrix/
+
 ---
 
 ## Pages
